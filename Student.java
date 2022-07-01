@@ -1,37 +1,37 @@
-package week3.day1.methodoverload;
+package week3.day1.org.student;
 
-public class Student {
+import week3.day1.org.department.Department;
 
-//	
-//
-//    Class: Students
-//    Methods: getStudentInfo()
-//
-//Description: 
-//Create multiple getStudentInfo() method by passing id argument alone, by id & name, by email & phoneNumber
+public class Student extends Department{
 	
-	
-	private void getStudentInfo(int id) {
+	public void studentName(){
 		// TODO Auto-generated method stub
-System.out.println("id");
+System.out.println("name is lora");
 	}
 	
-	private void getStudentInfo(int id, String name) {
+	private void studentDept() {
 		// TODO Auto-generated method stub
-System.out.println("id"+"name");
+System.out.println("civil");
 	}
 	
-	private void getStudentInfo(String email,int phoneNumber) {
+	private void studentId() {
 		// TODO Auto-generated method stub
-System.out.println("email"+"ph");
+System.out.println("2433106");
 	}
 	
+	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Student s=new Student();
-s.getStudentInfo(2344);
-s.getStudentInfo("eva@123", 545677);
-s.getStudentInfo(3, "flo");
+s.studentName();
+s.studentDept();
+s.studentId();
+s.deptName();
+s.collegeCode();
+s.collegeName();
+s.collegeRank();
+s.evana();//recent ah ula evana dan edukum
 
 	}
 
